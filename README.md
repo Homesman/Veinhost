@@ -1,52 +1,43 @@
-# ⛏️ Veinhost
+# Veinhost
 
-**Servidores de Minecraft con despliegue en 60 segundos.**
+Instant Minecraft server hosting for the Peruvian market. Deploy in 60 seconds with dedicated RAM, DDoS protection, and automatic modpack installation.
 
-Veinhost es un servicio de hosting de servidores Minecraft orientado al mercado peruano, con RAM dedicada, protección DDoS y despliegue automático de modpacks.
+## Features
 
-## 🚀 Características
+- **Auto-deployment** — Server provisions automatically after payment
+- **One-click modpacks** — Install from Modrinth and Feed The Beast
+- **Plugins & mods** — Browse and install directly from the panel
+- **Free subdomains** — Every server gets `yourname.veinhost.com` with automatic SRV records (no port needed)
+- **DDoS protection** — Included on all plans at no extra cost
+- **Local payments** — Yape, bank transfer, and Mercado Pago
 
-- **Despliegue automático** — El servidor se crea automáticamente al completar el pago
-- **Modpacks** — Instalación con un click desde Modrinth y Feed The Beast
-- **Plugins y Mods** — Catálogo integrado desde Modrinth
-- **Subdominios automáticos** — Cada servidor recibe `usuario.veinhost.com` (sin puerto gracias a SRV records)
-- **Panel de control** — Basado en Pterodactyl con tema voxel personalizado
-- **Protección DDoS** — Incluida en todos los planes
-- **Pagos locales** — Yape, transferencia bancaria y Mercado Pago
+## Plans
 
-## 📋 Planes
+| Plan | RAM | CPU | Storage | Price (PEN) |
+|------|-----|-----|---------|-------------|
+| Tierra | 2 GB | 1 vCPU | 30 GB SSD | S/ 25/mo |
+| Hierro | 4 GB | 2 vCPU | 40 GB SSD | S/ 45/mo |
+| Diamante | 8 GB | 4 vCPU | 120 GB SSD | S/ 85/mo |
+| Netherite | 10 GB | 4 vCPU | 150 GB SSD | S/ 150/mo |
 
-| Plan | RAM | CPU | Disco | Precio |
-|------|-----|-----|-------|--------|
-| Tierra | 2 GB | 100% | 30 GB | S/ 25/mes |
-| Hierro | 4 GB | 200% | 40 GB | S/ 45/mes |
-| Diamante | 8 GB | 400% | 120 GB | S/ 85/mes |
-| Netherite | 10 GB | 400% | 150 GB | S/ 150/mes |
+## Tech Stack
 
-## 🛠️ Stack Técnico
+- **Game Panel**: Pterodactyl + Wings (Docker)
+- **Billing**: Paymenter (Laravel)
+- **DNS**: Cloudflare API (automatic SRV record creation)
+- **Infrastructure**: Docker containers on Ubuntu VPS
 
-- **Panel**: Pterodactyl + Wings (Docker)
-- **Billing**: Paymenter (PHP/Laravel)
-- **DNS**: Cloudflare (API para SRV records automáticos)
-- **Infraestructura**: VPS con Docker, Coolify como orquestador
-- **SSO**: Login unificado entre Veinhost y Pterodactyl
+## Integrations
 
-## 🔗 Integraciones
+- **Modrinth API** — Modpacks, mods, and plugin catalog
+- **Feed The Beast** — Modpack distribution
+- **Cloudflare API** — Programmatic DNS management for subdomains and SRV records
 
-- **Modrinth API** — Modpacks, mods y plugins
-- **Feed The Beast** — Modpacks
-- **CurseForge API** — Modpacks (próximamente)
-- **Cloudflare API** — DNS management automático
+## Links
 
-## 🌐 Enlaces
+- **Website**: [veinhost.com](https://veinhost.com)
+- **Game Panel**: [panel.veinhost.com](https://panel.veinhost.com)
 
-- **Sitio web**: [veinhost.com](https://veinhost.com)
-- **Panel**: [panel.veinhost.com](https://panel.veinhost.com)
+## License
 
-## 📄 Licencia
-
-Propietario — © 2026 Veinhost. Todos los derechos reservados.
-
----
-
-<p align="center">Desplegá tu mundo en 60 segundos ⛏️</p>
+© 2026 Veinhost. All rights reserved.
